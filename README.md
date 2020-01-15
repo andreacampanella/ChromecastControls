@@ -14,7 +14,7 @@ Tested on Raspberry Pi running Raspbian Buster.
 
 ## Why?
 ### Power
-Chromecast can switch on modern TVs/receivers (using [HDMI CEC](https://en.wikipedia.org/wiki/Consumer_Electronics_Control)) when you start casting to it. But for some reason, Google didn't implement a feature to switch off devices when it's been sitting idle for a while. This wastes power (somewhere in the ballpark of 50-100W). ChromecastControls fixes this by detecting when the Chromecast is sitting idle, and putting any connected equipment into standby.
+Chromecast can switch on modern TVs/receivers (using [HDMI CEC](https://en.wikipedia.org/wiki/Consumer_Electronics_Control)) when you start casting to it. But for some reason, Google didn't implement a feature to switch off devices when it's been sitting idle for a while. This wastes power (somewhere in the ballpark of 50-100mW). ChromecastControls fixes this by detecting when the Chromecast is sitting idle, and putting any connected equipment into standby.
 ### Volume
 Ever see the message "Surround Sound enabled. To adjust volume, use your TV's remote control" when trying to change the volume for something you're casting from your phone? Chromecast can modify volume for stereo sources, but not surround sound. However, CEC can send a signal to your TV/receiver to change the volume. Why the Chromecast doesn't send this signal is anyone's guess. But ChromecastControls can detect when you've attempted to change the volume via your phone, and sends the corresponding CEC signals to your equipment.
 
